@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from __future__ import print_function, with_statement
+
 
 import os
 import sys
@@ -10,7 +10,7 @@ import threading
 from optparse import OptionParser
 
 if sys.version_info[0] < 3:
-    import cPickle as pickle
+    import pickle as pickle
     import string
 else:
     import pickle
