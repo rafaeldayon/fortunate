@@ -64,7 +64,7 @@ class Fortunate(object):
             if fortune_file.closed:
                 raise KeyError
         except KeyError:
-            fortune_file = self._fortunes[filename] = open(filename, 'rb')
+            fortune_file = self._fortunes[filename] = open(filename, 'r')
         return fortune_file
 
     @property
